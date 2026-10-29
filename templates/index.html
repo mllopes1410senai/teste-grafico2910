@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gráfico de Movimentações</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>📊 Gráfico de Movimentações</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">🏠 Início</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Receitas e Despesas por Data</h2>
+
+        <object
+            type="image/svg+xml"
+            data="{{ svg }}"
+            style="width:100%; max-width:800px;">
+        </object>
+
+        <br>
+
+        <a href="{{ svg }}" download class="btn">
+            ⬇️ Baixar SVG
+        </a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F4F7F8;
+    color: #1F2937;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #FFFFFF;
+    padding: 24px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+header h1 {
+    font-size: 25px;
+    color: #0D7C4E;
+    font-weight: 700;
+}
+
+nav a {
+    color: #0D7C4E;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 11px 16px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: #DDF7E7;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 32px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5EDE8;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(31, 41, 55, 0.05);
+}
+
+main h2 {
+    color: #1F2937;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #E5EDE8;
+}
+
+object {
+    display: block;
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0D7C4E;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 13px 20px;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #09643E;
+    transform: translateY(-2px);
+}
+
+nav a:focus-visible,
+.btn:focus-visible {
+    outline: 3px solid #86CFA7;
+    outline-offset: 3px;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    main {
+        width: 95%;
+        margin: 22px auto;
+        padding: 20px 12px;
+    }
+
+    main h2 {
+        font-size: 19px;
+    }
+
+    object {
+        height: 350px;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+    }
+}
